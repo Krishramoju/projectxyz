@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python Frameworks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .framework-btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      transition: 0.3s;
+    }
+    .framework-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Click a Python Framework to Learn More</h1>
+  <div class="button-container">
+    <button class="framework-btn" onclick="openPage('django.html')">Django</button>
+    <button class="framework-btn" onclick="openPage('flask.html')">Flask</button>
+    <button class="framework-btn" onclick="openPage('fastapi.html')">FastAPI</button>
+    <button class="framework-btn" onclick="openPage('pytorch.html')">PyTorch</button>
+    <button class="framework-btn" onclick="openPage('tensorflow.html')">TensorFlow</button>
+    <button class="framework-btn" onclick="openPage('kivy.html')">Kivy</button>
+    <button class="framework-btn" onclick="openPage('pygame.html')">Pygame</button>
+    <!-- Add more buttons as needed -->
+  </div>
+
+  <script>
+    function openPage(page) {
+      window.open(page, '_blank');
+    }
+  </script>
+</body>
+</html>
+
